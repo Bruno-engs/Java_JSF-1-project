@@ -1,0 +1,43 @@
+body {
+    background: #22272e;
+    color: #fff;
+    margin: 0;
+}
+
+#container{
+    color: #22272e;
+    background: #fff;
+    width: 40%;
+    max-width: 400px;
+    margin: 10% auto;
+    display: flex;
+    border-radius: 15px;
+}
+
+div.title{
+    width: 400px;
+    text-align: center;
+}
+
+div.body{
+    text-align: center;
+    width: 400px;
+    
+}
+
+input[type=text]{
+    width: 80%;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    margin: 5px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
