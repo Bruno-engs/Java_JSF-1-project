@@ -7,21 +7,26 @@
         <title>Calculadora</title>
     </h:head>
     <h:body>
+        <h:form>
         <div id="container">
             <section>
                 <div class="title">
                     <h3>Calculadora</h3>
                 </div>
                 <div class="body">
-                    <input type="text" id="valor1" placeholder="Primeiro Valor"/><br></br>
-                    <input type="text" id="valor2" placeholder="Segundo Valor"/><br></br>
-                    <h:commandButton value="+"></h:commandButton><h:commandButton value="-"></h:commandButton>
-                    <h:commandButton value="*"></h:commandButton><h:commandButton value="/"></h:commandButton>
+                    <h:inputText id="valor1" value="#{calculadora.valor1}" required="true"/> <br></br>
+                    <h:inputText id="valor2" value="#{calculadora.valor2}" required="true"/><br></br>
+                    <h:commandButton value="+" action="#{calculadora.somar()}" />
+                    <h:commandButton value="+" action="#{calculadora.somar()}" />
+                    <h:commandButton value="+" action="#{calculadora.somar()}" />
+                    <h:commandButton value="+" action="#{calculadora.somar()}" /><br></br>
+                    <br></br><h:outputLabel value="#{calculadora.resultado}" />
                 </div>
-                
+ 
+              
             </section>
         </div>
-
+        </h:form>
     </h:body>
 </html>
 
